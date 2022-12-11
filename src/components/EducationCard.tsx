@@ -6,8 +6,8 @@ interface EducationCardProps {
 }
 
 const EducationCard = ({logo, title, subtitle, duration}: EducationCardProps) => {
-    return <div className={'project-card education-card'}>
-        <div className={'project-header'}>
+    return <div className={'education-card'}>
+        <div className={'header'}>
             <div className={'avatar2 project-logo'}>
                 <img src={logo} alt={'project-logo'}/>
             </div>
