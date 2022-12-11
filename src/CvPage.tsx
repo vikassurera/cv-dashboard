@@ -241,7 +241,7 @@ const CvPage = () => {
                                    logo={'imgs/Kendriya_Vidyalaya_logo.png'}
                                    duration={'2018 - 2019'}
                     />
-                    <EducationCard title={'AISCE (CBSE)'}
+                    <EducationCard title={'AISSE (CBSE)'}
                                    subtitle={'Kendriya Vidyalaya Sector 30 Gandhinagar'}
                                    logo={'imgs/Kendriya_Vidyalaya_logo.png'}
                                    duration={'2016 - 2017'}
