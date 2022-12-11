@@ -24,9 +24,9 @@ const CvPage = () => {
             <div className={'avatar white-border'}>
                 <img src={'imgs/profile2.jpeg'} alt={'banner-avatar'}/>
             </div>
-            <h2>
+            <h1>
                 Vikas Surera
-            </h2>
+            </h1>
             <h4>
                 fullstack-developer
             </h4>
