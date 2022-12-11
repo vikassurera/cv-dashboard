@@ -1,22 +1,18 @@
-import {AiFillGithub, AiFillYoutube, AiOutlineLink} from "react-icons/ai";
+import Attachments, {AttachmentsProps} from "./Attachments";
 
 interface ProjectCardProps {
     title: string;
     subtitle: string;
     logo: string;
     duration: string;
-    description: string;
-    links:{
-        github?: string;
-        website?: string;
-        youtube?: string;
-    }
+    description?: string;
+    links?:AttachmentsProps
 }
 
 const ProjectCard = ({logo, title, subtitle ,duration, links, description }:ProjectCardProps ) => {
     return <div className={'card project-card'}>
         <div className={'project-header'}>
-            <div className={'avatar project-logo'}>
+            <div className={'avatar2 project-logo'}>
                 <img src={logo} alt={'project-logo'}/>
             </div>
             <div className={'project-title'}>
@@ -35,34 +31,14 @@ const ProjectCard = ({logo, title, subtitle ,duration, links, description }:Proj
         </p>
         <br/>
         <div className={'project-body'}>
-            <p>
-                {description}
-            </p>
-            <ul className={'cta-section'}>
-                {
-                    links.github && <li>
-                        <a className={'github'} href={links.github}>
-                            <AiFillGithub size={30}/>
-                        </a>
-                    </li>
-                }
-                {
-                    links.website && <li>
-                        <a className={'link'} href={links.website} target={'_blank'}>
-                            <AiOutlineLink size={30}/>
-                        </a>
-                    </li>
-
-                }
-                {
-                    links.youtube && <li>
-                        <a className={'youtube'}
-                           href={links.youtube}>
-                            <AiFillYoutube size={30}/>
-                        </a>
-                    </li>
-                }
-            </ul>
+            {
+                description && <p>
+                    {description}
+                </p>
+            }
+            {
+                links && <Attachments {...links}/>
+            }
         </div>
 
     </div>;

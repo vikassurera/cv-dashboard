@@ -1,16 +1,19 @@
+import Attachments, {AttachmentsProps} from "./Attachments";
+
 export interface WorkCardProps {
     title: string;
     subtitle: string;
     logo: string;
     duration: string;
     data: string[],
+    links?: AttachmentsProps
 }
 
-const WorkCard = ({logo, title, subtitle, duration, data}: WorkCardProps) => {
+const WorkCard = ({logo, title, subtitle, duration, data, links}: WorkCardProps) => {
     return <div className={'work-bond'}>
         <div className={'card project-card'}>
             <div className={'project-header'}>
-                <div className={'avatar project-logo'}>
+                <div className={'avatar2 project-logo'}>
                     <img src={logo} alt={'project-logo'}/>
                 </div>
                 <div className={'project-title'}>
@@ -34,6 +37,9 @@ const WorkCard = ({logo, title, subtitle, duration, data}: WorkCardProps) => {
                         data.map((item) => <li>{item}</li>)
                     }
                 </ul>
+                {
+                    links && <Attachments {...links}/>
+                }
             </div>
 
         </div>
