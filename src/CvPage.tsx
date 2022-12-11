@@ -1,4 +1,5 @@
 import {FiArrowUpRight} from 'react-icons/fi';
+import {FaGraduationCap} from 'react-icons/fa';
 import {AiOutlineShareAlt} from 'react-icons/ai';
 import './cv_page.scss';
 import Section from "./components/Section";
@@ -10,7 +11,7 @@ import EducationCard from "./components/EducationCard";
 const CvPage = () => {
     return <div className={'cv-container'}>
         <div className={'banner'}>
-            <ul>
+            <ul className={'navbar'}>
                 <li><a href={'#about'}>About</a></li>
                 <li><a href={'#education'}>Education</a></li>
                 <li><a href={'#projects'}>Projects</a></li>
@@ -228,7 +229,7 @@ const CvPage = () => {
                     </ul>
                 </div>
                 <div id={'education'} className={'card side-card'}>
-                    <p className={'title'}>Education</p>
+                    <p className={'side-card-header'}> <FaGraduationCap size={28}/>&nbsp; Education</p>
                     <br/>
                     <EducationCard title={'Mechanical Engineering (B.Tech)'}
                                  subtitle={'IIT Kharagpur'}
