@@ -27,9 +27,9 @@ const CvPage = () => {
             <h1>
                 Vikas Surera
             </h1>
-            <h4>
+            <h3>
                 fullstack-developer
-            </h4>
+            </h3>
             <Attachments {...{
                 website: 'https://vikassurera.com',
                 otherLink: 'https://bloggerboy.co.in',
