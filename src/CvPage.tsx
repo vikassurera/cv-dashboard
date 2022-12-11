@@ -230,7 +230,7 @@ const CvPage = () => {
                 </div>
                 <div id={'education'} className={'card side-card'}>
                     <p className={'side-card-header'}> <FaGraduationCap size={28}/>&nbsp; Education</p>
-                    <br/>
+                    {/*<br/>*/}
                     <EducationCard title={'Mechanical Engineering (B.Tech)'}
                                  subtitle={'IIT Kharagpur'}
                                  logo={'imgs/iit_kgp_logo.png'}
