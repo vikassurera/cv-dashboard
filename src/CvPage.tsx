@@ -1,6 +1,6 @@
 import {FiArrowUpRight} from 'react-icons/fi';
 import {FaGraduationCap} from 'react-icons/fa';
-import {AiOutlineShareAlt} from 'react-icons/ai';
+import {AiOutlineShareAlt,AiOutlineDownload} from 'react-icons/ai';
 import './cv_page.scss';
 import Section from "./components/Section";
 import ProjectCard from "./components/ProjectCard";
@@ -37,12 +37,15 @@ const CvPage = () => {
                 linkedin: 'https://www.linkedin.com/in/vikassurera/',
             }}/>
             <div className={'avatar-cta'}>
-                <button className={'button'}>
-                    Contact Me
-                </button>
-                <button className={'button'}>
-                    Share <AiOutlineShareAlt/>
-                </button>
+                {/*<button className={'button'}>*/}
+                {/*    Contact Me*/}
+                {/*</button>*/}
+                {/*<button className={'button'}>*/}
+                {/*    Share <AiOutlineShareAlt/>*/}
+                {/*</button>*/}
+                <a className={'button'} style={{display:'flex'}} href={'cv.pdf'} target={'_blank'}>
+                    <AiOutlineDownload size={20}/>&nbsp; Download CV
+                </a>
             </div>
         </div>
         <div className={'cv-body-container'}>
@@ -193,7 +196,7 @@ const CvPage = () => {
                               data={[
                                   'Responsible for management of the spAts and NSSC website (design, development and maintenance)',
                                   'Successfully designed and developed a quiz platform for Space Quiz event with participants of over 350+',
-                                  'Designed and developed NSSC 20, a space-themed, user-friendly website on React. (nssc-react.web.app)',
+                                  'Designed and developed NSSC 20, a space-themed, user-friendly website on React.',
                               ]}
                               links={{
                                   website: 'https://spats.co.in/',
