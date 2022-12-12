@@ -51,7 +51,7 @@ const CvPage = () => {
         </div>
         <div className={'cv-body-container'}>
             <div className={'cv-body cv-body-left'}>
-                <Section id={'about'} title={'About Me'}>
+                <Section id={'about'} title={'About Me'} className={'desktop'}>
                     <p>
                         I am a final year undergraduate student at the Indian Institute of Technology, Kharagpur
                         enrolled in its B.Tech course. I'm from Alwar, Rajasthan, India. My hobbies are playing football
@@ -210,6 +210,16 @@ const CvPage = () => {
 
             </div>
             <div className={'cv-body cv-body-right'}>
+                <Section id={'about'} title={'About Me'} className={'mobile'}>
+                    <p>
+                        I am a final year undergraduate student at the Indian Institute of Technology, Kharagpur
+                        enrolled in its B.Tech course. I'm from Alwar, Rajasthan, India. My hobbies are playing football
+                        and coding.
+                        <br/>
+                        <br/>
+                        I have worked on a variety of projects ranging from web applications to mobile applications.
+                    </p>
+                </Section>
                 <div className={'card side-card'}>
                     <ul>
                         <li>
