@@ -12,9 +12,9 @@ const EducationCard = ({logo, title, subtitle, duration}: EducationCardProps) =>
                 <img src={logo} alt={'project-logo'}/>
             </div>
             <div className={'project-title'}>
-                <h4>
+                <p className={'title'}>
                     {title}
-                </h4>
+                </p>
                 <p>
                     {subtitle} ({duration})
                 </p>

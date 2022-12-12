@@ -1,12 +1,13 @@
 import {FiArrowUpRight} from 'react-icons/fi';
 import {FaGraduationCap} from 'react-icons/fa';
-import {AiOutlineShareAlt,AiOutlineDownload} from 'react-icons/ai';
+import {AiOutlineDownload} from 'react-icons/ai';
 import './cv_page.scss';
 import Section from "./components/Section";
 import ProjectCard from "./components/ProjectCard";
 import WorkCard from "./components/WorkCard";
 import Attachments from "./components/Attachments";
 import EducationCard from "./components/EducationCard";
+import AwardCard, {AwardType} from "./components/AwardsCard";
 
 const CvPage = () => {
     return <div className={'cv-container'}>
@@ -249,6 +250,44 @@ const CvPage = () => {
                                    logo={'imgs/Kendriya_Vidyalaya_logo.png'}
                                    duration={'2016 - 2017'}
                     />
+                </div>
+                <div className={'card side-card'}>
+                    <p className={'side-card-header'}> Academic Awards</p>
+                    <AwardCard title={'International Rank 112 & Zonal Rank 15'}
+                               subtitle={'National Cyber Olympiad'}
+                               year={'2019'}
+                               awardType={AwardType.RANK}
+                    />
+                    <AwardCard title={'Rank 79 of the top 100 National Achievers'}
+                               subtitle={'class 12-PCM in NTSE'}
+                               year={'2019'}
+                               awardType={AwardType.RANK}
+                    />
+                    <AwardCard title={'International Rank 102 & Zonal Rank 7'}
+                               subtitle={'National Cyber Olympiad'}
+                               year={'2016'}
+                               awardType={AwardType.RANK}
+                    />
+                </div>
+                <div className={'card side-card'}>
+
+                    <p className={'side-card-header'}>Sports Awards</p>
+                    <AwardCard title={'4x400 relay (silver)'}
+                                   subtitle={'Interhall tournament IIT Kharagpur'}
+                                   year={'2022'}
+                               awardType={AwardType.SILVER}
+                    />
+                    <AwardCard title={'Long Jump (bronze)'}
+                               subtitle={'Athletics Regional Meet (Gujarat Region)'}
+                               year={'2016'}
+                               awardType={AwardType.BRONZE}
+                    />
+                    <AwardCard title={'Football (silver)'}
+                               subtitle={'Sports Regional Meet (Rajasthan Region)'}
+                               year={'2012'}
+                               awardType={AwardType.SILVER}
+                    />
+
                 </div>
                 <div className={'card side-card'}>
                     <ul>
