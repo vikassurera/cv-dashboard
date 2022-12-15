@@ -1,0 +1,60 @@
+.grid-card-layout {
+  display: grid;
+  column-gap: 30px;
+  row-gap: 30px;
+  grid-template-columns: 1fr 1fr;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    //row-gap: 30px;
+  }
+}
+
+.grid-card-layout-1{
+  grid-template-columns: 1fr;
+}
+
+.grid-card-layout-2{
+  grid-template-columns: 1fr 1fr;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.timeline-view {
+  border-left: 2px solid #e4e5e7;
+  padding: 10px 0 10px 40px;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: calc(50% + 7px);
+    left: -7px;
+    background-color: #e4e5e7;
+    height: 2px;
+    width: 100px;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -7px;
+    background-color: #e4e5e7;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 10px 0 10px 0;
+    //margin-left: -10px;
+    border-left: none;
+
+    &:after, &:before {
+      display: none;
+    }
+  }
+}

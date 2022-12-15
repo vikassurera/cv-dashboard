@@ -10,7 +10,7 @@ import {
 import {TbFileCertificate} from "react-icons/tb";
 import {BsGlobe} from "react-icons/bs";
 
-export interface AttachmentsProps {
+export interface AttachmentI {
     github?: string;
     otherLink?: string;
     website?: string;
@@ -22,7 +22,7 @@ export interface AttachmentsProps {
     instagram?: string;
 }
 
-const Attachments = (links: AttachmentsProps) => {
+const Attachments = (links: AttachmentI) => {
     return <ul className={'link-attachments'}>
         {
             links && links.website && <li>
