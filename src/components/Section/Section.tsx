@@ -5,10 +5,11 @@ export interface SectionProps {
     id?: string;
     bottomLine?: boolean
     className?: string
+    style?: React.CSSProperties
 }
 
-const Section = ({ children, title,id,className, bottomLine = true }: PropsWithChildren<SectionProps>) => {
-    return <div id={id} className={`section ${className}`}>
+const Section = ({ children, title,id,className,style, bottomLine = true }: PropsWithChildren<SectionProps>) => {
+    return <div id={id} className={`section ${className}`} style={style}>
         <div className={'section-heading'}>
             <h3>
                 {title}
