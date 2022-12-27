@@ -23,7 +23,7 @@ const CvPage = () => {
 
         <div className={'banner-avatar'}>
             <div className={'avatar white-border'}>
-                <img src={'imgs/profile2.jpeg'} alt={'banner-avatar'}/>
+                <img src={'imgs/profile3.jpeg'} alt={'banner-avatar'}/>
             </div>
             <h1>
                 Vikas Surera
