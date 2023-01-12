@@ -64,6 +64,15 @@ const CvPage = () => {
                 <Section id={'projects'} title={'Projects'}>
                     <br/>
                     <div className={'project-grid'}>
+                        <ProjectCard title={'PaperHub'}
+                                     subtitle={'Self Initiated Project'}
+                                     logo={'imgs/paperhub_logo.png'}
+                                     duration={'Jan 2023 - Present'}
+                                     description={'Developed a question paper website for all IIT Kharagpur students.'}
+                                     links={{
+                                         website: 'https://paperhub.vikassurera.com'
+                                     }}
+                        />
                         <ProjectCard title={'ERP Alerts App'}
                                      subtitle={'Self Initiated Project'}
                                      logo={'imgs/erp_alerts_logo.png'}
