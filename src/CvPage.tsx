@@ -77,7 +77,7 @@ const CvPage = () => {
                                      subtitle={'Self Initiated Project'}
                                      logo={'imgs/erp_alerts_logo.png'}
                                      duration={'Nov 2022 - Dec 2022'}
-                                     description={'Developed a push notifications app for all placement related notifications and updates for IIT Kharagpur students.'}
+                                     description={'Designed and Developed a push notifications app from scratch for all placement related notifications and updates for IIT Kharagpur students.'}
                                      links={{
                                          github: 'https://github.com/Vikas-Surera/erp-alerts-app',
                                          website: 'https://oreo.vikassurera.com/notifications'
