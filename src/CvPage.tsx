@@ -34,7 +34,7 @@ const CvPage = () => {
             <Attachments {...{
                 website: 'https://vikassurera.com',
                 otherLink: 'https://bloggerboy.co.in',
-                github: 'https://github.com/Vikas-Surera',
+                github: 'https://github.com/vikassurera',
                 linkedin: 'https://www.linkedin.com/in/vikassurera/',
             }}/>
             <div className={'avatar-cta'}>
@@ -79,7 +79,7 @@ const CvPage = () => {
                                      duration={'Nov 2022 - Dec 2022'}
                                      description={'Designed and Developed a push notifications app from scratch for all placement related notifications and updates for IIT Kharagpur students.'}
                                      links={{
-                                         github: 'https://github.com/Vikas-Surera/erp-alerts-app',
+                                         github: 'https://github.com/vikassurera/erp-alerts-app',
                                          website: 'https://oreo.vikassurera.com/notifications'
                                      }}
                         />
@@ -90,7 +90,7 @@ const CvPage = () => {
                                      duration={'Nov 2022 - Dec 2022'}
                                      description={'A central platform to buy subscription to all the apps and services of the products developed by Vikas Surera.'}
                                      links={{
-                                         github: 'https://github.com/Vikas-Surera/erp-alerts-app',
+                                         github: 'https://github.com/vikassurera/erp-alerts-app',
                                          website: 'https://oreo.vikassurera.com'
                                      }}
                         />
@@ -101,7 +101,7 @@ const CvPage = () => {
                                      duration={'Aug 2022 - Nov 2022'}
                                      description={'A web application that helps users find the optimal path to their destination based on A* (heuristic) search algorithm.'}
                                      links={{
-                                         github: 'https://github.com/Vikas-Surera/project_AIFA',
+                                         github: 'https://github.com/vikassurera/project_AIFA',
                                          website: 'https://aifa-2022.vikassurera.com/',
                                          youtube: 'https://youtu.be/njq03n2HIXs?list=PLe3yOhtTcUkCsOCrrvqphQ6FfkIaZrwWQ'
                                      }}
