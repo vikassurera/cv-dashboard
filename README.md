@@ -1,5 +1,7 @@
 # CV Dashboard
 
+[![CI](https://github.com/vikassurera/cv-dashboard/actions/workflows/deployment.yml/badge.svg)](https://github.com/vikassurera/cv-dashboard/actions/workflows/deployment.yml)
+
 Different sections of the CV 
 1. About
 2. Basic Info
