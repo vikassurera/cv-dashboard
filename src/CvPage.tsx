@@ -44,7 +44,7 @@ const CvPage = () => {
                 {/*<button className={'button'}>*/}
                 {/*    Share <AiOutlineShareAlt/>*/}
                 {/*</button>*/}
-                <a className={'button'} style={{display:'flex'}} href={'cv.pdf'} target={'_blank'}>
+                <a className={'button'} style={{display:'flex'}} href={'cv.pdf'} target={'_blank'} rel={"noreferrer"}>
                     <AiOutlineDownload size={20}/>&nbsp; Download CV
                 </a>
             </div>
@@ -314,7 +314,7 @@ const CvPage = () => {
                             <p className={'title'}>Location</p>
                             <p className={'location'}>
                         <span className={'avatar'}>
-                            <img src={'imgs/india_flag.png'}/>
+                            <img src={'imgs/india_flag.png'} alt={"india_flag"}/>
                         </span>
                                 &nbsp; IIT Kharagpur, India
                             </p>
@@ -322,16 +322,16 @@ const CvPage = () => {
 
                         <li>
                             <p className={'title'}>Website</p>
-                            <a href={'https://vikassurera.com'} target={'_blank'}>vikassurera.com <FiArrowUpRight/></a>
+                            <a href={'https://vikassurera.com'} target={'_blank'} rel={"noreferrer"}>vikassurera.com <FiArrowUpRight/></a>
                         </li>
                         <li>
                             <p className={'title'}>LinkedIn</p>
-                            <a href={'https://www.linkedin.com/in/vikassurera/'} target={'_blank'}>Vikas
+                            <a href={'https://www.linkedin.com/in/vikassurera/'} rel={"noreferrer"} target={'_blank'}>Vikas
                                 Surera<FiArrowUpRight/></a>
                         </li>
                         <li>
                             <p className={'title'}>Blog</p>
-                            <a href={'https://bloggerboy.co.in'}
+                            <a href={'https://bloggerboy.co.in'} rel={"noreferrer"}
                                target={'_blank'}>bloggerboy.co.in <FiArrowUpRight/></a>
                         </li>
                         <li>
