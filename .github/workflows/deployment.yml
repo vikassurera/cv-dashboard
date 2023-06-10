@@ -36,6 +36,9 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - name: Log outputs
+        run: echo ${{ steps.deployment.outputs }}
+
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
@@ -47,11 +50,8 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-#      - name: Build
-#        run: PUBLIC_URL=${{ steps.deployment.outputs.page_url }} npm run build
-
       - name: Build
-        run: npm run build
+        run: PUBLIC_URL=${{ steps.deployment.outputs.page_url }}/ npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
