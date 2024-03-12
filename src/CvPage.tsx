@@ -29,7 +29,7 @@ const CvPage = () => {
                 Vikas Surera
             </h1>
             <h3>
-                fullstack-developer
+                lead-engineer@OneTap
             </h3>
             <Attachments {...{
                 website: 'https://vikassurera.com',
