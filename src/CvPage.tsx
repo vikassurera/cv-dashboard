@@ -38,12 +38,6 @@ const CvPage = () => {
                 linkedin: 'https://www.linkedin.com/in/vikassurera/',
             }}/>
             <div className={'avatar-cta'}>
-                {/*<button className={'button'}>*/}
-                {/*    Contact Me*/}
-                {/*</button>*/}
-                {/*<button className={'button'}>*/}
-                {/*    Share <AiOutlineShareAlt/>*/}
-                {/*</button>*/}
                 <a className={'button'} style={{display:'flex'}} href={'cv.pdf'} target={'_blank'} rel={"noreferrer"}>
                     <AiOutlineDownload size={20}/>&nbsp; Download CV
                 </a>
@@ -53,9 +47,7 @@ const CvPage = () => {
             <div className={'cv-body cv-body-left'}>
                 <Section id={'about'} title={'About Me'} className={'desktop'}>
                     <p>
-                        I am a final year undergraduate student at the Indian Institute of Technology, Kharagpur
-                        enrolled in its B.Tech course. I'm from Alwar, Rajasthan, India. My hobbies are playing football
-                        and coding.
+                        Lead Engineer @ OneTap graduated from the Indian Institute of Technology, Kharagpur (B.Tech in Mechanical Engineering). I'm from Alwar, Rajasthan, India. Coding is my passion
                         <br/>
                         <br/>
                         I have worked on a variety of projects ranging from web applications to mobile applications.
