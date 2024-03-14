@@ -29,7 +29,7 @@ const CvPage = () => {
                 Vikas Surera
             </h1>
             <h3>
-                lead-engineer@OneTap
+                fullstack-devloper
             </h3>
             <Attachments {...{
                 website: 'https://vikassurera.com',
@@ -47,7 +47,7 @@ const CvPage = () => {
             <div className={'cv-body cv-body-left'}>
                 <Section id={'about'} title={'About Me'} className={'desktop'}>
                     <p>
-                        Lead Engineer @ OneTap graduated from the Indian Institute of Technology, Kharagpur (B.Tech in Mechanical Engineering). I'm from Alwar, Rajasthan, India. Coding is my passion
+                        Fullstack @ OneTap graduated from the Indian Institute of Technology, Kharagpur (B.Tech in Mechanical Engineering). I'm from Alwar, Rajasthan, India. Coding is my passion
                         <br/>
                         <br/>
                         I have worked on a variety of projects ranging from web applications to mobile applications.
