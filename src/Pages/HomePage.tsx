@@ -31,7 +31,7 @@ export default class HomePage extends React.Component<HomePagePropTypes, HomePag
         twitter: {
             icon: <TbBrandTwitter/>,
             backgroundColor: 'rgb(14 165 233)',
-            link: 'https://twitter.com/bloggerboyx'
+            link: 'https://twitter.com/vikassurera'
         },
         github: {
             icon: <SlSocialGithub/>,
