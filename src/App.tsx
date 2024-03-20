@@ -1,11 +1,19 @@
 import React from 'react';
 import './App.css';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import CvPage from "./CvPage";
 import HomePage from "./Pages/HomePage";
 
+
 function App() {
-  return (
-    <HomePage/>
-  );
+    return (
+        <Router>
+            <Routes>
+                <Route path={'/'} element={<HomePage/>}/>
+                <Route path={'/portoflio'} element={<CvPage/>}/>
+            </Routes>
+        </Router>
+    )
 }
 
 export default App;

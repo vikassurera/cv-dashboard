@@ -23,7 +23,7 @@ const CvPage = () => {
 
         <div className={'banner-avatar'}>
             <div className={'avatar white-border'}>
-                <img src={'imgs/profile3.jpeg'} alt={'banner-avatar'}/>
+                <img src={'imgs/profile4.jpeg'} alt={'banner-avatar'}/>
             </div>
             <h1>
                 Vikas Surera
@@ -36,9 +36,10 @@ const CvPage = () => {
                 otherLink: 'https://bloggerboy.co.in',
                 github: 'https://github.com/vikassurera',
                 linkedin: 'https://www.linkedin.com/in/vikassurera/',
+                twitter: 'https://twitter.com/vikassurera'
             }}/>
             <div className={'avatar-cta'}>
-                <a className={'button'} style={{display:'flex'}} href={'cv.pdf'} target={'_blank'} rel={"noreferrer"}>
+                <a className={'button'} style={{display: 'flex'}} href={'cv2.pdf'} target={'_blank'} rel={"noreferrer"}>
                     <AiOutlineDownload size={20}/>&nbsp; Download CV
                 </a>
             </div>
@@ -47,45 +48,48 @@ const CvPage = () => {
             <div className={'cv-body cv-body-left'}>
                 <Section id={'about'} title={'About Me'} className={'desktop'}>
                     <p>
-                        Fullstack @ OneTap graduated from the Indian Institute of Technology, Kharagpur (B.Tech in Mechanical Engineering). I'm from Alwar, Rajasthan, India. Coding is my passion
+                        Hey! I'm a fullstack developer from IIT Kharagpur.
+                        My expertise lies in creating web and mobile applications.
                         <br/>
                         <br/>
-                        I have worked on a variety of projects ranging from web applications to mobile applications.
+                        Exploring new tech to create better solutions.
                     </p>
                 </Section>
                 <Section id={'projects'} title={'Projects'}>
                     <br/>
                     <div className={'project-grid'}>
-                        <ProjectCard title={'PaperHub'}
-                                     subtitle={'Self Initiated Project'}
-                                     logo={'imgs/paperhub_logo.png'}
-                                     duration={'Jan 2023 - Present'}
-                                     description={'Developed a question paper website for all IIT Kharagpur students.'}
-                                     links={{
-                                         website: 'https://paperhub.vikassurera.com'
-                                     }}
-                        />
+                        {/*<ProjectCard title={'PaperHub'}*/}
+                        {/*             subtitle={'Self Initiated Project'}*/}
+                        {/*             logo={'imgs/paperhub_logo.png'}*/}
+                        {/*             duration={'Jan 2023 - Present'}*/}
+                        {/*             description={'Developed a question paper website for all IIT Kharagpur students.'}*/}
+                        {/*             links={{*/}
+                        {/*                 website: 'https://paperhub.vikassurera.com'*/}
+                        {/*             }}*/}
+                        {/*/>*/}
                         <ProjectCard title={'ERP Alerts App'}
                                      subtitle={'Self Initiated Project'}
                                      logo={'imgs/erp_alerts_logo.png'}
                                      duration={'Nov 2022 - Dec 2022'}
-                                     description={'Designed and Developed a push notifications app from scratch for all placement related notifications and updates for IIT Kharagpur students.'}
+                                     description={'Developed a push notifications app and chrome extension from scratch for all placement related notifications and updates for IIT Kharagpur students.'}
                                      links={{
-                                         github: 'https://github.com/vikassurera/erp-alerts-app',
-                                         website: 'https://oreo.vikassurera.com/notifications'
+                                         github: 'https://github.com/vikassurera/erp-alerts-app-public',
+                                         website: 'https://erpalerts.kgplife.com',
+                                         otherLink: 'https://chromewebstore.google.com/detail/erp-alerts/hnnjfmjhhdmajofafjndhpmohfodakco',
+                                         youtube: 'https://youtu.be/e18FubXjUzY?si=fv53UwynGgzAcAXc'
                                      }}
                         />
 
-                        <ProjectCard title={'Buy an Oreo'}
-                                     subtitle={'Self Initiated Project'}
-                                     logo={'imgs/oreo_logo2.png'}
-                                     duration={'Nov 2022 - Dec 2022'}
-                                     description={'A central platform to buy subscription to all the apps and services of the products developed by Vikas Surera.'}
-                                     links={{
-                                         github: 'https://github.com/vikassurera/erp-alerts-app',
-                                         website: 'https://oreo.vikassurera.com'
-                                     }}
-                        />
+                        {/*<ProjectCard title={'Buy an Oreo'}*/}
+                        {/*             subtitle={'Self Initiated Project'}*/}
+                        {/*             logo={'imgs/oreo_logo2.png'}*/}
+                        {/*             duration={'Nov 2022 - Dec 2022'}*/}
+                        {/*             description={'A central platform to buy subscription to all the apps and services of the products developed by Vikas Surera.'}*/}
+                        {/*             links={{*/}
+                        {/*                 github: 'https://github.com/vikassurera/erp-alerts-app',*/}
+                        {/*                 website: 'https://oreo.vikassurera.com'*/}
+                        {/*             }}*/}
+                        {/*/>*/}
 
                         <ProjectCard title={'Optimal Path Navigator'}
                                      subtitle={'AIFA | IIT Kharagpur'}
@@ -112,60 +116,59 @@ const CvPage = () => {
                 </Section>
                 <Section id={'work_experience'} title={'Work Experience'}>
                     <p>
-                        I have an experience of more than 2 years in the field of fullstack web development including
-                        1.5 years at a US based startup.
+                        Working for startups from the past 3 years in web and app development.
                     </p>
                     <br/>
-                    <WorkCard title={'Full-stack Developer'}
+                    <WorkCard title={'Fullstack Developer'}
                               subtitle={'OneTap'}
                               logo={'imgs/onetap.png'}
-                              duration={'Apr 2021 - Jan 2022 & Apr 2022 - Present'}
+                              duration={'Apr 2021 - Present'}
                               data={[
-                                  'Created CI/CD pipeline using Github Action, Docker with automatic slack notifications for tests and deployments',
-                                  'Set up frontend automated UI testing - build, test and deploy using Jest and Puppeteer with scalable setup',
-                                  'Frontend development - UI/UX (React, Bootstrap) and backend development (Express, Node Js, APIs)',
-                                  'I was part of product planning discussions and responsible for the development of new features in productiongoDB.',
+                                  'Prioritising the product features to impact 35,000+ users.',
+                                  'Understanding customer requirements and UI/UX improvements.',
+                                  'Developed visitor facing react native app for ios and android with CI/CD for auto deployment on respective stores.',
+                                  'Increased development efficiency by moving all manual deployment process into one commit action with automated tests and deployments.',
                               ]}
                               links={{
                                   website: 'https://www.onetapcheckin.com/',
-                                  certificate: 'https://drive.google.com/file/d/124-ThwJtnHn6Bcq63fXnxrzzgMMO6t9I/view?usp=share_link',
+                                  // certificate: 'https://drive.google.com/file/d/124-ThwJtnHn6Bcq63fXnxrzzgMMO6t9I/view?usp=share_link',
                               }}
                     />
-                    <WorkCard title={'Frontend Developer'}
+                    <WorkCard title={'Fullstack Developer (Intern)'}
                               subtitle={'Bitpack'}
                               logo={'imgs/bitpack.jpeg'}
                               duration={'Feb 2022 - Jul 2022'}
                               data={[
-                                  'Flutter app and web development with razorpay payment gateway integration, REST API, Git and Github use',
-                                  'React frontend app and UI designs implementation from designs provided via Adobe XD files',
+                                  'Flutter app development with razorpay payment gateway integration, REST API, Git and Github use.',
+                                  'React (Next & Typescript) frontend development with REST API and UI designs implementation.',
+                                  'UI implementation based on designs provided in Adobe XD files'
                               ]}
                               links={{
                                   website: 'https://bitpack.me/',
                                   certificate: 'https://drive.google.com/file/d/1jPk9VH1fzH8TVO405i1ZA7zqpSelADSn/view?usp=share_link'
                               }}
                     />
-                    <WorkCard title={'Web Developer'}
+                    <WorkCard title={'Web Developer (Contract)'}
                               subtitle={'Assurance Technologies'}
                               logo={'imgs/assurance2.png'}
                               duration={'Apr 2021 - Jun 2021'}
                               data={[
-                                  'Designed and developed complete website UI and deployed it on Express server on AWS ec2',
-                                  'Developed automatic email delivery on form submission on website using Simple Email Service',
-                                  'Developed a feature for administrators to get all forms submitted on website directly into their email inbox',
+                                  'Built and deployed the website on AWS EC2 instance ',
+                                  'Added automatic email delivery on form submission on website using Simple Email Service (AWS SES).',
                               ]}
                               links={{
                                   website: 'http://assurancevoice.com/',
                                   certificate: 'https://drive.google.com/file/d/10K-7MWf0rrLENiouV_EZvfV7gR_EBr7K/view?usp=share_link',
                               }}
                     />
-                    <WorkCard title={'App Developer'}
+                    <WorkCard title={'App Developer (Intern)'}
                               subtitle={'Escola Learning Management System'}
                               logo={'imgs/test-logo2.png'}
                               duration={'Dec 2020 - Jun 2021'}
                               data={[
-                                  'Initiated the work on flutter (by Google) apps with tech specs REST API integration, Git and Github',
+                                  'Initiated the work on flutter apps with tech specs REST API integration, Git and Github',
                                   'Developed 2 apps where teachers can assign homework to students and students can submit the same',
-                                  'Implemented caching (image, files and data), UI and state management (used provider package)',
+                                  'Implemented caching (image, files and data), UI and state management (provider package)',
                               ]}
                               links={{
                                   website: 'http://www.vishistbusinesssolutions.com/',
@@ -221,7 +224,7 @@ const CvPage = () => {
                         I have worked on a variety of projects ranging from web applications to mobile applications.
                     </p>
                 </Section>
-                <div className={'card side-card'}>
+                <div className={'custom-card side-card'}>
                     <ul>
                         <li>
                             <p>
@@ -231,25 +234,25 @@ const CvPage = () => {
                         <li>
                             <p className={'title'}>Fluent</p>
                             <p>
-                                C++, C, Javascript, HTML, CSS
+                                C++, C, Javascript, HTML, CSS, React, Node, Express, Typescript
                             </p>
                         </li>
                         <li>
                             <p className={'title'}>Familiar</p>
                             <p>
-                                React, Node, Express, TypeScript, Dart, Flutter, Docker, Git, Github and SolidWorks
+                                Dart, Flutter, Docker, Git, Github, React Native, MongoDB, MySQL, GitHub Actions, CI/CD
                             </p>
                         </li>
 
                     </ul>
                 </div>
-                <div id={'education'} className={'card side-card'}>
-                    <p className={'side-card-header'}> <FaGraduationCap size={28}/>&nbsp; Education</p>
+                <div id={'education'} className={'custom-card side-card'}>
+                    <p className={'side-card-header'}><FaGraduationCap size={28}/>&nbsp; Education</p>
                     {/*<br/>*/}
                     <EducationCard title={'Mechanical Engineering (B.Tech)'}
-                                 subtitle={'IIT Kharagpur'}
-                                 logo={'imgs/iit_kgp_logo.png'}
-                                 duration={'2019 - 2023'}
+                                   subtitle={'IIT Kharagpur'}
+                                   logo={'imgs/iit_kgp_logo.png'}
+                                   duration={'2019 - 2023'}
                     />
                     <EducationCard title={'AISSCE (CBSE)'}
                                    subtitle={'Kendriya Vidyalaya Sector 30 Gandhinagar'}
@@ -262,7 +265,7 @@ const CvPage = () => {
                                    duration={'2016 - 2017'}
                     />
                 </div>
-                <div className={'card side-card'}>
+                <div className={'custom-card side-card'}>
                     <p className={'side-card-header'}> Academic Awards</p>
                     <AwardCard title={'International Rank 112 & Zonal Rank 15'}
                                subtitle={'National Cyber Olympiad'}
@@ -280,12 +283,12 @@ const CvPage = () => {
                                awardType={AwardType.RANK}
                     />
                 </div>
-                <div className={'card side-card'}>
+                <div className={'custom-card side-card'}>
 
                     <p className={'side-card-header'}>Sports Awards</p>
                     <AwardCard title={'4x400 relay (silver)'}
-                                   subtitle={'Interhall tournament IIT Kharagpur'}
-                                   year={'2022'}
+                               subtitle={'Interhall tournament IIT Kharagpur'}
+                               year={'2022'}
                                awardType={AwardType.SILVER}
                     />
                     <AwardCard title={'Long Jump (bronze)'}
@@ -300,7 +303,7 @@ const CvPage = () => {
                     />
 
                 </div>
-                <div className={'card side-card'}>
+                <div className={'custom-card side-card'}>
                     <ul>
                         <li>
                             <p className={'title'}>Location</p>
@@ -314,7 +317,8 @@ const CvPage = () => {
 
                         <li>
                             <p className={'title'}>Website</p>
-                            <a href={'https://vikassurera.com'} target={'_blank'} rel={"noreferrer"}>vikassurera.com <FiArrowUpRight/></a>
+                            <a href={'https://vikassurera.com'} target={'_blank'}
+                               rel={"noreferrer"}>vikassurera.com <FiArrowUpRight/></a>
                         </li>
                         <li>
                             <p className={'title'}>LinkedIn</p>
@@ -328,7 +332,7 @@ const CvPage = () => {
                         </li>
                         <li>
                             <p className={'title'}>Email</p>
-                            <p>contact@vikassurera.com</p>
+                            <p>vikassurera@gmail.com</p>
                         </li>
                     </ul>
                 </div>

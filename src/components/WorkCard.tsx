@@ -11,26 +11,26 @@ export interface WorkCardProps {
 
 const WorkCard = ({logo, title, subtitle, duration, data, links}: WorkCardProps) => {
     return <div className={'work-bond'}>
-        <div className={'card project-card'}>
+        <div className={'project-card custom-card'}>
             <div className={'project-header'}>
                 <div className={'avatar2 project-logo'}>
                     <img src={logo} alt={'project-logo'}/>
                 </div>
                 <div className={'project-title'}>
-                    <h3>
+                    <h5>
                         {title}
-                    </h3>
+                    </h5>
                     <p>
                         {subtitle}
                     </p>
                 </div>
 
             </div>
-            <br/>
+            {/*<br/>*/}
             <p>
                 {duration}
             </p>
-            <br/>
+            {/*<br/>*/}
             <div className={'project-body'}>
                 <ul>
                     {
