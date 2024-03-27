@@ -79,33 +79,33 @@ export default class HomePage extends React.Component<HomePagePropTypes, HomePag
                     <UserInfoCard name={userData.name} avatarUrl={userData.avatarUrl} desc={userData.desc}
                                   blog={userData.blog}/>
                     <SocialCard id={'twitter-card'} icon={this.socialData.twitter.icon}
-                                link={this.socialData.twitter.link}
+                                link={this.socialData.twitter.link} cursorHint={'Connect on Twitter!'}
                                 backgroundColor={this.socialData.twitter.backgroundColor}/>
 
 
 
                     <SocialCard id={'erpalerts-card'} icon={this.socialData.erpAlerts.icon}
-                                link={this.socialData.erpAlerts.link}
+                                link={this.socialData.erpAlerts.link} cursorHint={'Visit my Project!'}
                                 backgroundColor={this.socialData.erpAlerts.backgroundColor}/>
 
                     <TimezoneCard/>
 
                     <SocialCard id={'github-card'} icon={this.socialData.github.icon}
-                                link={this.socialData.github.link}
+                                link={this.socialData.github.link} cursorHint={'My Projects'}
                                 backgroundColor={this.socialData.github.backgroundColor}/>
 
 
                     <AboutCard/>
                     <SocialCard id={'linkedin-card'} icon={this.socialData.linkedin.icon}
-                                link={this.socialData.linkedin.link}
+                                link={this.socialData.linkedin.link} cursorHint={'Connect on LinkedIn!'}
                                 backgroundColor={this.socialData.linkedin.backgroundColor}/>
 
 
                     <SocialCard id={'calendar-card'} icon={this.contactData.calendar.icon}
-                                link={this.contactData.calendar.link}
+                                link={this.contactData.calendar.link} cursorHint={'Schedule a meeting!'}
                                 backgroundColor={this.contactData.calendar.backgroundColor}/>
 
-                    <TechStackCard/>
+                    <TechStackCard cursorHint={'Tech I work on!'}/>
 
                 </div>
             </div>

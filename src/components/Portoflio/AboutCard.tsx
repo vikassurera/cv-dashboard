@@ -3,7 +3,7 @@ import CardContainer from "./CardContainer";
 import {Link} from "react-router-dom";
 
 const AboutCard: React.FC = () => {
-    return <CardContainer id={'about-card'}>
+    return <CardContainer id={'about-card'} cursorHint={'Hey, Its me!'}>
         <Link to={'/portfolio'} className={'portfolio-link'}>
             <div>
                 <h5>

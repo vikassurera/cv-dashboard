@@ -6,10 +6,11 @@ interface SocialCardPropTypes {
     icon: React.ReactNode,
     backgroundColor: string,
     id: string
+    cursorHint?: string
 }
 
 const SocialCard: React.FC<SocialCardPropTypes> = (props) => {
-    return <CardContainer id={props.id}
+    return <CardContainer id={props.id} cursorHint={props.cursorHint}
                           className={'social-card d-flex justify-content-center align-items-center text-white'}
                           style={{backgroundColor: props.backgroundColor}}>
         <a href={props.link} target={'_blank'} rel={'noreferrer'}>

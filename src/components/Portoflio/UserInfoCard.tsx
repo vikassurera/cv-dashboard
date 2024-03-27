@@ -18,7 +18,7 @@ const UserInfoCard: React.FC<UserInfoCardPropTypes> = (props) => {
         blog: props.blog
     }
 
-    return <CardContainer id={'info-card'}>
+    return <CardContainer id={'info-card'} cursorHint={'bloggerboy'}>
         <div className={'card-body d-flex align-items-center justify-content-start'}>
             <div className={'m-sm-3'}>
                 <img id={'avatar'} src={userData.avatarUrl} alt={userData.name}

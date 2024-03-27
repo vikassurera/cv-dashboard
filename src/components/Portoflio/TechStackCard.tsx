@@ -7,8 +7,12 @@ import {TbBrandReactNative} from "react-icons/tb";
 import {IoLogoJavascript} from "react-icons/io";
 // import {BiLogoTypescript} from "react-icons/bi";
 
-const TechStackCard = () => {
-    return <CardContainer id={'tech-stack-card'}>
+interface TechStackCardProps {
+    cursorHint?: string
+}
+
+const TechStackCard: React.FC<TechStackCardProps> = (props) => {
+    return <CardContainer id={'tech-stack-card'} cursorHint={props.cursorHint}>
         <div className={'tech-grid'}>
             <SiTypescript/>
             <FaReact/>
