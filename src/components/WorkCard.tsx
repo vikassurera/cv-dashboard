@@ -6,10 +6,11 @@ export interface WorkCardProps {
     logo: string;
     duration: string;
     data: string[],
+    technologies?: string[],
     links?: AttachmentsProps
 }
 
-const WorkCard = ({logo, title, subtitle, duration, data, links}: WorkCardProps) => {
+const WorkCard = ({logo, title, subtitle, duration, data, links, technologies}: WorkCardProps) => {
     return <div className={'work-bond'}>
         <div className={'project-card custom-card'}>
             <div className={'project-header'}>
@@ -30,15 +31,20 @@ const WorkCard = ({logo, title, subtitle, duration, data, links}: WorkCardProps)
             <p>
                 {duration}
             </p>
+
             {/*<br/>*/}
             <div className={'project-body'}>
                 <ul>
                     {
                         data.map((item) => <li>{item}</li>)
                     }
+
                 </ul>
                 {
                     links && <Attachments {...links}/>
+                }
+                {
+                    technologies && <p style={{textAlign: 'right', fontSize: 12}}>{technologies.join(', ')}</p>
                 }
             </div>
 

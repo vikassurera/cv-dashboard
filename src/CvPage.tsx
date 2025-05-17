@@ -23,7 +23,7 @@ const CvPage = () => {
 
         <div className={'banner-avatar'}>
             <div className={'avatar white-border'}>
-                <img src={'imgs/profile4.jpeg'} alt={'banner-avatar'}/>
+                <img src={'imgs/profile5.jpeg'} alt={'banner-avatar'}/>
             </div>
             <h1>
                 Vikas Surera
@@ -38,11 +38,11 @@ const CvPage = () => {
                 linkedin: 'https://www.linkedin.com/in/vikassurera/',
                 twitter: 'https://twitter.com/vikassurera'
             }}/>
-            <div className={'avatar-cta'}>
-                <a className={'button'} style={{display: 'flex'}} href={'cv2.pdf'} target={'_blank'} rel={"noreferrer"}>
-                    <AiOutlineDownload size={20}/>&nbsp; Download CV
-                </a>
-            </div>
+            {/*<div className={'avatar-cta'}>*/}
+            {/*    <a className={'button'} style={{display: 'flex'}} href={'cv2.pdf'} target={'_blank'} rel={"noreferrer"}>*/}
+            {/*        <AiOutlineDownload size={20}/>&nbsp; Download CV*/}
+            {/*    </a>*/}
+            {/*</div>*/}
         </div>
         <div className={'cv-body-container'}>
             <div className={'cv-body cv-body-left'}>
@@ -70,8 +70,8 @@ const CvPage = () => {
                         <ProjectCard title={'ERP Alerts App'}
                                      subtitle={'Self Initiated Project'}
                                      logo={'imgs/erp_alerts_logo.png'}
-                                     duration={'Nov 2022 - Dec 2022'}
-                                     description={'Developed a push notifications app and chrome extension from scratch for all placement related notifications and updates for IIT Kharagpur students.'}
+                                     duration={'Nov 2022 - May 2024'}
+                                     description={'Developed a push notifications app and chrome extension from scratch with payment gateway for all placement related notifications and updates for IIT Kharagpur students. I had deployed the app on PlayStore and Chrome Web Store for 1.5 years with 100s of downloads.'}
                                      links={{
                                          github: 'https://github.com/vikassurera/erp-alerts-app-public',
                                          website: 'https://erpalerts.kgplife.com',
@@ -116,23 +116,41 @@ const CvPage = () => {
                 </Section>
                 <Section id={'work_experience'} title={'Work Experience'}>
                     <p>
-                        Working for startups from the past 3 years in web and app development.
+                        Working for startups from the past 4 years in web and app development.
                     </p>
                     <br/>
                     <WorkCard title={'Fullstack Developer'}
+                              subtitle={'Verisian'}
+                              logo={'imgs/verisian.png'}
+                              duration={'May 2024 - Present'}
+                              data={[
+                                'Develop responsive UIs based on Figma and wireframe designs.',
+                                'Implement and optimize graph algorithms, including merging complex graph structures.',
+                                'Optimize PostgreSQL queries for efficient traversal and manipulation of large-scale graphs.',
+                             ]}
+                              links={{
+                                  website: 'https://www.verisian.com/',
+                                  // certificate: 'https://drive.google.com/file/d/124-ThwJtnHn6Bcq63fXnxrzzgMMO6t9I/view?usp=share_link',
+                              }}
+                              technologies={['React', 'Typescript','Nextjs', 'Postgres', 'Python', 'Java', 'Turborepo']}
+                    />
+                    <WorkCard title={'Fullstack Developer'}
                               subtitle={'OneTap'}
                               logo={'imgs/onetap.png'}
-                              duration={'Apr 2021 - Present'}
+                              duration={'Apr 2021 - May 2024'}
                               data={[
                                   'Prioritising the product features to impact 35,000+ users.',
                                   'Understanding customer requirements and UI/UX improvements.',
                                   'Developed visitor facing react native app for ios and android with CI/CD for auto deployment on respective stores.',
                                   'Increased development efficiency by moving all manual deployment process into one commit action with automated tests and deployments.',
+                                  'Backend API tests and frontend tests with Jest and Puppeteer.',
                               ]}
                               links={{
                                   website: 'https://www.onetapcheckin.com/',
                                   // certificate: 'https://drive.google.com/file/d/124-ThwJtnHn6Bcq63fXnxrzzgMMO6t9I/view?usp=share_link',
                               }}
+                                technologies={['MERN','Typescript', 'React Native', 'Docker', 'Github Actions', 'Mixpanel', 'Digital Ocean']}
+
                     />
                     <WorkCard title={'Fullstack Developer (Intern)'}
                               subtitle={'Bitpack'}
@@ -147,6 +165,7 @@ const CvPage = () => {
                                   website: 'https://bitpack.me/',
                                   certificate: 'https://drive.google.com/file/d/1jPk9VH1fzH8TVO405i1ZA7zqpSelADSn/view?usp=share_link'
                               }}
+                                technologies={['Flutter', 'React', 'Typescript']}
                     />
                     <WorkCard title={'Web Developer (Contract)'}
                               subtitle={'Assurance Technologies'}
@@ -160,6 +179,7 @@ const CvPage = () => {
                                   website: 'http://assurancevoice.com/',
                                   certificate: 'https://drive.google.com/file/d/10K-7MWf0rrLENiouV_EZvfV7gR_EBr7K/view?usp=share_link',
                               }}
+                                technologies={['HTML', 'CSS', 'Javascript']}
                     />
                     <WorkCard title={'App Developer (Intern)'}
                               subtitle={'Escola Learning Management System'}
@@ -174,6 +194,7 @@ const CvPage = () => {
                                   website: 'http://www.vishistbusinesssolutions.com/',
                                   certificate: 'https://drive.google.com/file/d/10N7iQiO7XeSaCI4xF0TDB2xzqKZdZSsC/view?usp=share_link'
                               }}
+                                technologies={['Flutter', 'REST API', 'Git', 'Github']}
                     />
 
                 </Section>
@@ -240,7 +261,7 @@ const CvPage = () => {
                         <li>
                             <p className={'title'}>Familiar</p>
                             <p>
-                                Dart, Flutter, Docker, Git, Github, React Native, MongoDB, MySQL, GitHub Actions, CI/CD
+                                Nextjs, Postgres, Dart, Flutter, Docker, Git, Github, React Native, MongoDB, MySQL, GitHub Actions, CI/CD, Turborepo, Tailwind, Puppeteer, Mixpanel, Razorpay Gateway Integration
                             </p>
                         </li>
 
