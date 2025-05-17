@@ -1,6 +1,6 @@
 import {FiArrowUpRight} from 'react-icons/fi';
 import {FaGraduationCap} from 'react-icons/fa';
-import {AiOutlineDownload} from 'react-icons/ai';
+// import {AiOutlineDownload} from 'react-icons/ai';
 import './cv_page.scss';
 import Section from "./components/Section";
 import ProjectCard from "./components/ProjectCard";
